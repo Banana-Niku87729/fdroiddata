@@ -1,0 +1,33 @@
+# fdroiddata リポジトリの metadata/dev.rec877.north.yml に置く下書き。
+# 「★」の行は自分で決めてから出すこと。出す前に fdroid lint / fdroid build で確認する。
+
+Categories:
+  - Internet
+License: FIXME-★ライセンスのSPDX識別子（例: MIT, Apache-2.0, GPL-3.0-only）。リポジトリにLICENSEファイルが必要
+AuthorName: Rec877Dev
+WebSite: https://github.com/Banana-Niku87729/North-for-Android-Unofficial-
+SourceCode: https://github.com/Banana-Niku87729/North-for-Android-Unofficial-
+IssueTracker: https://github.com/Banana-Niku87729/North-for-Android-Unofficial-/issues
+
+AntiFeatures:
+  NonFreeNet:
+    en-US: Requires the north.rip service, which is not free software.
+
+AutoName: North (Unofficial)
+
+RepoType: git
+Repo: https://github.com/Banana-Niku87729/North-for-Android-Unofficial-.git
+
+Builds:
+  - versionName: 1.1.7           # ★最初に載せるリリースのバージョンに合わせる
+    versionCode: 10107           #   同じ式: メジャー*10000 + マイナー*100 + パッチ
+    commit: v1.1.7-regular
+    subdir: app
+    gradle:
+      - fdroid
+
+# 自動更新は regular タグだけを対象にする（emergency はGitHub版のみ）
+AutoUpdateMode: Version
+UpdateCheckMode: Tags ^v[0-9]+\.[0-9]+\.[0-9]+-regular$
+CurrentVersion: 1.1.7
+CurrentVersionCode: 10107
