@@ -3,7 +3,7 @@
 
 Categories:
   - Internet
-License: FIXME-★ライセンスのSPDX識別子（例: MIT, Apache-2.0, GPL-3.0-only）。リポジトリにLICENSEファイルが必要
+License: MIT
 AuthorName: Rec877Dev
 WebSite: https://github.com/Banana-Niku87729/North-for-Android-Unofficial-
 SourceCode: https://github.com/Banana-Niku87729/North-for-Android-Unofficial-
@@ -19,8 +19,8 @@ RepoType: git
 Repo: https://github.com/Banana-Niku87729/North-for-Android-Unofficial-.git
 
 Builds:
-  - versionName: 1.1.7           # ★最初に載せるリリースのバージョンに合わせる
-    versionCode: 10107           #   同じ式: メジャー*10000 + マイナー*100 + パッチ
+  - versionName: 1.1.7
+    versionCode: 10107           #メジャー*10000 + マイナー*100 + パッチ
     commit: v1.1.7-regular
     subdir: app
     gradle:
